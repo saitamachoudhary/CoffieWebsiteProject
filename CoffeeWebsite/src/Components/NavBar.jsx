@@ -1,13 +1,17 @@
 import '../Styles/Navbar.css'
-import { Link } from "react-router-dom";
+import { Link,Outlet} from "react-router-dom";
 const NavBar = () => {
   return (
-    <div className='navbar' style={{}}>
-      <Link style={{color:'white',textDecoration:'none'}}>Home</Link>
-      <Link>OurMenu</Link>
-      <Link>About</Link>
-      <Link>Gallery</Link>
-      <Link>Contact</Link>
+    <div className='navbar img1'>
+      <img style={{width:'138px'}} src='\src\image\logo-retina-free-img.png' alt="" />
+      <div className='navbar_linktags'>
+      <Link className='link_style' to='/'>Home</Link>
+      <Link className='link_style' to='/ourmenu'>OurMenu</Link>
+      <Link className='link_style' to='/about'>About</Link>
+      <Link className='link_style' to='/gallery '>Gallery</Link>
+      <Link className='link_style' to='/contact'>Contact</Link>
+    </div>
+    <Outlet/>
     </div>
   )
 }
