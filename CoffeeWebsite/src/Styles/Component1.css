@@ -1,0 +1,28 @@
+.Parent_div{
+    min-height: 100vh;
+    /* min-width: 100vw; */
+    background-image: linear-gradient(to right, #7F4625,#A77C4E);
+    position: relative;
+}
+
+.background_img{
+    height: 700px;
+    width: 675px;
+    background-image: url('../image/hero-01-free-img.jpg');
+    background-position-x: right;
+    background-position-y: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    float: right;
+    opacity: .25;
+    position: relative;
+    z-index: 1;
+}
+
+.img1{
+    width: 138px;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-54%,10%);
+}
