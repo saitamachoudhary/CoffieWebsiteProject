@@ -6,17 +6,25 @@
 }
 
 .navbar_linktags{
-    width: 500px;
-    /* background-color: white; */
+    width: 450px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 5px 10px;    
+    justify-content: space-around;
+    padding: 5px 10px;
+    margin-top: 25px;  
 }
 
 .link_style{
     color: white;
     text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.8px;
+}
+
+.link_style:hover{
+    cursor: pointer;
+    color: #D8C6B8;
+    transition: 0.3s;
 }
 
 .img1{
@@ -24,4 +32,5 @@
     left: 50%;
     top: 0%;
     transform: translate(-54%,10%);
+    z-index: 1;
 }

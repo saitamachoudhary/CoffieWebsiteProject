@@ -1,13 +1,12 @@
 .Parent_div{
-    min-height: 100vh;
-    /* min-width: 100vw; */
+    /* height: 100vh; */
     background-image: linear-gradient(to right, #7F4625,#A77C4E);
-    position: relative;
+    /* position: relative; */
 }
 
 .background_img{
     height: 100vh;
-    width: 675px;
+    width: 695px;
     background-image: url('../image/hero-01-free-img.jpg');
     background-position-x: right;
     background-position-y: top;
@@ -15,6 +14,5 @@
     background-repeat: no-repeat;
     float: right;
     opacity: .25;
-    position: relative;
-    z-index: 1;
+    z-index: 0;
 }

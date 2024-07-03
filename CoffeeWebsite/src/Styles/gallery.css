@@ -1,0 +1,5 @@
+.galleryParent_div{
+    min-height: 100vh;
+    background-image: linear-gradient(to right, #7F4625,#A77C4E);
+    position: relative;
+}

@@ -1,8 +1,10 @@
-
-
+import '../Styles/contact.css'
+import NavBar from './NavBar';
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <div className="contactParent_div">
+      <NavBar/>
+    </div>
   )
 }
 

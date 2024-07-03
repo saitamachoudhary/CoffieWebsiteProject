@@ -1,0 +1,6 @@
+.aboutParent_div{
+    min-height: 100vh;
+    /* min-width: 100vw; */
+    background-image: linear-gradient(to right, #7F4625,#A77C4E);
+    position: relative;
+}
