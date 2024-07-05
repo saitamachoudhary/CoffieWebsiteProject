@@ -5,10 +5,10 @@ import { FaAngleRight } from "react-icons/fa6";
 
 const Component1 = () => {
   return (
-    <div className="bg-gradient-to-r from-[#7F4625] to-[#A77C4E] relative">
-      <div className='min-h-screen'>
+    <div className="h-auto w-full bg-gradient-to-r from-[#7F4625] to-[#A77C4E] relative">
+      {/* <div className=''>
         <NavBar />
-        {/* <div className=''>
+        <div className=''>
         <div className='background_img'></div>
         <div className='relative top-72 left-40 inline-block'>
           <h2 className=' text-white text-3xl font-extrabold'>Welcome!</h2>
@@ -24,11 +24,11 @@ const Component1 = () => {
             <img className='relative left-40 z-[1]' src='src\image\hero-002-free-img.png' alt="" />
           </div>
         </div>
-       </div> */}
-      </div>
+       </div>
+      </div> */}
       {/* drinks section */}
-      <div className='min-h-screen flex justify-center items-center px-40'>
-        <div className='h-[100vh] w-[100vw]'>
+      <div className='flex justify-center items-center px-40'>
+        <div className='w-full'>
           <div className='flex flex-col items-center justify-center mb-10'>
             <h1 className='text-[4.7rem] text-white'>Drinks</h1>
             <div className='h-[0.8px] w-[60px] bg-white mb-3'></div>
@@ -68,8 +68,8 @@ const Component1 = () => {
       {/* Croissants Section */}
 
       <div className='flex items-center justify-center px-40'>
-       <div className='w-[100vw] flex items-center justify-between'>
-       <div>
+       <div className='w-full flex items-center justify-between'>
+       <div className='pl-16'>
           <h4 className='text-[#D8C6B8] text-[1.2rem] font-semibold'>From $2.50</h4>
           <h1 className='text-white text-[4rem] font-semibold mb-3'>Croissants</h1>
           <div className='h-[0.8px] w-[60px] bg-white mb-6'></div>
@@ -80,24 +80,25 @@ const Component1 = () => {
             <p className='text-white'> All Croissants</p>
           </div>
         </div>
-        <div>
-          <img src="src\image\croissant-01-free-img.png" alt="" />
+        <div >
+          <img className=' ml-40' src="src\image\croissant-01-free-img.png" alt="" />
         </div>
        </div>
+       {/* <div className="bg-[url('src/image/croissant-01-free-img.png')]"></div> */}
       </div>
 
       {/* Buy for Home section */}
 
       <div className='px-40 flex items-center justify-center'>
-        <div className='bg-gradient-to-r from-[#AE7E4E] to-[#C59D70] flex items-center justify-center rounded-[20px] shadow-[rgba(50,50,93,0.25)_0px_30px_60px_-12px,rgba(0,0,0,0.3)_0px_18px_36px_-18px]'>
+        <div className='w-full bg-gradient-to-r from-[#AE7E4E] to-[#C59D70] flex items-center justify-center rounded-[20px] shadow-[rgba(50,50,93,0.25)_0px_30px_60px_-12px,rgba(0,0,0,0.3)_0px_18px_36px_-18px]'>
           <div>
             <img src="src\image\coffee-01-free-img.png" alt="" />
           </div>
           <div>
           <div className='w-[500px]'>
           <h4 className='text-[#D8C6B8] text-[1.2rem] font-semibold'>From $19.50</h4>
-          <h1 className='text-white text-[4rem] font-semibold'>Buy for</h1>
-          <h1 className='text-white text-[4rem] font-semibold mb-3'>Home</h1>
+          <h1 className='text-white text-[4rem] font-semibold'>Buy for Home</h1>
+          {/* <h1 className='text-white text-[4rem] font-semibold mb-3'>Home</h1> */}
           <div className='h-[0.8px] w-[60px] bg-white mb-6'></div>
           <h2 className='text-white text-[1.8rem] font-semibold'>Totam rem aperiam</h2>
           <p className='text-[#D8C6B8]'>Lorem ipsum dolor sit amet, consectetur</p>
@@ -110,6 +111,12 @@ const Component1 = () => {
         </div>
           </div>
         </div>
+      </div>
+
+      {/* About */}
+
+      <div>
+        
       </div>
 
     </div>
