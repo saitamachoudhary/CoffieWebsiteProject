@@ -16,3 +16,10 @@
     opacity: .25;
     z-index: 0;
 }
+
+/* .bg_url{
+    background-image: url('../image/bg-0001-free-img.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:fit-content
+} */
