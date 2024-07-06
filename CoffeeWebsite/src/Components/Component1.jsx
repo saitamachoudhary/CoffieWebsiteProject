@@ -7,6 +7,7 @@ import { IoPlayCircleSharp } from "react-icons/io5";
 const Component1 = () => {
   return (
     <div className="h-auto w-full bg-gradient-to-r from-[#7F4625] to-[#A77C4E] relative">
+      {/* Hero section */}
       <div className=' pb-40'>
         <NavBar />
         <div className='flex'>
@@ -23,7 +24,7 @@ const Component1 = () => {
             <img className='relative left-40 z-[1]' src='src\image\hero-002-free-img.png' alt="" />
           </div>
         </div>
-        <div className='background_img'></div>
+        <div className='bg-hero3-pattern h-[100vh] w-[695px] bg-cover bg-no-repeat float-right opacity-25 z-0'></div>
        </div>
       </div>
       {/* drinks section */}
