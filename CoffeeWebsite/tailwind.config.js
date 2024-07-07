@@ -10,7 +10,7 @@ export default {
         'hero-pattern': "url('./public/images/bg-0001-free-img.png')",
         'hero2-pattern': "url('./public/images/bg-005-free-img.png')",
         'hero3-pattern': "url('./src/image/hero-01-free-img.png')",
-        'ourMenuCoffeeForHome':"url('./src/image/bg-04-free-img.png')"
+        'ourMenuCoffeeForHome':"url('./src/image/bg-04-free-img.png')",
       },
     },
   },
