@@ -24,7 +24,7 @@ const Component1 = () => {
             <img className='relative left-40 z-[1]' src='src\image\hero-002-free-img.png' alt="" />
           </div>
         </div>
-        <div className='bg-hero3-pattern h-[100vh] w-[695px] bg-cover bg-no-repeat float-right opacity-25 z-0'></div>
+        <div className='bg-hero3-pattern bg-white h-[100vh] w-[695px] bg-cover bg-no-repeat float-right opacity-25 z-0'></div>
        </div>
       </div>
       {/* drinks section */}

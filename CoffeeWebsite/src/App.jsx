@@ -12,33 +12,6 @@ import Contact from './Components/Contact';
 
 function App() {
 
-  // const router=createBrowserRouter([
-  //   {path:'/',
-  //    element:<NavBar/>,
-  //    children:[
-  //     {
-  //       path:'/',
-  //       element:<Component1/>
-  //     },
-  //     {
-  //       path:'/ourmenu',
-  //       element:<OurMenu/>
-  //     },
-  //     {
-  //       path:'/about',
-  //       element:<About/>
-  //     },
-  //     {
-  //       path:'/gallery',
-  //       element:<Gallery/>
-  //     },
-  //     {
-  //       path:'/contact',
-  //       element:<Contact/>
-  //     }
-  //    ]
-  //   }
-  // ])
 
   const router=createBrowserRouter([
     {
