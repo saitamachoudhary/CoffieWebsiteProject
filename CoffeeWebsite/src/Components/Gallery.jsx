@@ -19,24 +19,10 @@ const Gallery = () => {
     <div className="galleryParent_div">
     <NavBar/>
     <div className='ourMenuh1 pt-28'>
-        <h1 className='text-white lg:text-[5.4rem] md:text-[5rem] sm:text[4rem] text-center'>Gallery</h1>
+        <h1 className='text-white lg:text-[5.4rem] md:text-[5rem] text-[4rem] text-center'>Gallery</h1>
       </div>
       {/* cards */}
-     {/* <div className="bg-hero2-pattern bg-contain bg-center bg-no-repeat w-full flex items-center justify-center">
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-          <div className="w-full md:w-1/2 bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src='src/image/gallery-01-free-img.jpg' alt="Placeholder 0" className="w-full h-full object-cover" />
-          </div>
-          <div className=" w-full md:w-1/4 bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src='src/image/gallery-02-free-img.jpg' alt="Placeholder 1" className="w-full h-full object-cover" />
-          </div>
-          <div className=" w-full md:w-1/4 bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src='src/image/gallery-03-free-img.jpg' alt="Placeholder 2" className="w-full h-full object-cover" />
-          </div>
-        </div>
-    </div> */}
      <div className="relative bg-hero2-pattern bg-contain bg-center bg-no-repeat flex items-center justify-center">
-      {/* <div className="absolute inset-0 bg-brown-500 opacity-70"></div> */}
       <div className="relative flex justify-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 p-6 md:p-12 w-full">
         <div className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 rounded-lg shadow-lg overflow-hidden">
           <img src={images[0]} alt="Placeholder 0" className="w-full h-64 lg:h-full md:h-80 object-cover" />

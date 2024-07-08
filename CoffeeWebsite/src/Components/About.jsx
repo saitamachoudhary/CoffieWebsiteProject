@@ -8,7 +8,7 @@ const About = () => {
      <NavBar />
      </div>
       <div className='ourMenuh1 pt-28'>
-        <h1 className='text-white lg:text-[5.4rem] md:text-[5rem] sm:text[4rem] text-center'>About</h1>
+        <h1 className='text-white lg:text-[5.4rem] md:text-[5rem] text-[4rem] text-center'>About</h1>
       </div>
       {/* Tailored-Made Coffee */}
       <div className="bg-contain bg-center bg-no-repeat bg-hero-pattern w-full">
