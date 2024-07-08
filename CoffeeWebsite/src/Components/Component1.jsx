@@ -1,7 +1,7 @@
 import "../Styles/Component1.css";
 import { FaAngleRight } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
-import NavBar from './NavBar';
+// import NavBar from './NavBar';
 import { IoPlayCircleSharp } from "react-icons/io5";
 
 const Component1 = () => {
@@ -9,7 +9,7 @@ const Component1 = () => {
     <div className="h-auto w-full bg-gradient-to-r from-[#7F4625] to-[#A77C4E] relative">
       {/* Hero section */}
       <div className=' pb-40'>
-        <NavBar />
+        {/* <NavBar /> */}
         <div className='flex'>
         <div className='relative top-72 left-40 inline-block'>
           <h2 className=' text-white text-3xl font-extrabold'>Welcome!</h2>
@@ -222,7 +222,7 @@ const Component1 = () => {
       {/* {brista party section} */}
 
       <div className="bg-hero2-pattern bg-center bg-no-repeat pb-36">
-        <div className="rounded-lg max-w-[1200px] mx-auto flex  shadow-[rgba(50,50,93,0.25)_0px_30px_60px_-12px,rgba(0,0,0,0.3)_0px_18px_36px_-18px] relative">
+        <div className="rounded-lg max-w-[1200px] mx-auto flex shadow-[rgba(50,50,93,0.25)_0px_30px_60px_-12px,rgba(0,0,0,0.3)_0px_18px_36px_-18px] relative">
           <div className="rounded-l-2xl flex items-center bg-gradient-to-r from-[#AE7E4E] to-[#C59D70] pl-[50px] pr-[20px] py-[40px] w-[60%]">
             <div className="w-[58%]">
               <h1 className="text-white text-[6.2rem] font-semibold leading-none mb-10">

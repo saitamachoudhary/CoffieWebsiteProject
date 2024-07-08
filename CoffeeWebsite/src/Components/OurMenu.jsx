@@ -1,5 +1,4 @@
 // import '../Styles/ourmenu.css'
-import { FaAngleRight } from "react-icons/fa6";
 import NavBar from './NavBar';
 const OurMenu = () => {
   const drinks = [

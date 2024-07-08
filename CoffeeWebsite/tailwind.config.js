@@ -11,6 +11,7 @@ export default {
         'hero2-pattern': "url('./public/images/bg-005-free-img.png')",
         'hero3-pattern': "url('./src/image/hero-01-free-img.png')",
         'ourMenuCoffeeForHome':"url('./src/image/bg-04-free-img.png')",
+        'aboutbgimg':"url('.src/image/bg-0006-free-img.png')",
       },
     },
   },
@@ -18,5 +19,5 @@ export default {
 }
 
 
-// import bgimg from './src/image/hero-01-free-img.png'
+// import bgimg from './src/image/bg-0006-free-img.png'
 
