@@ -11,7 +11,7 @@ const Component1 = () => {
       <div className=" pb-40">
         <NavBar />
 
-        {/* <div className="flex">
+        <div className="flex">
           <div className="relative top-72 left-40 inline-block">
             <h2 className=" text-white text-3xl font-extrabold">Welcome!</h2>
             <h1 className="text-[4.7rem] text-white font-extrabold">
@@ -38,8 +38,10 @@ const Component1 = () => {
             </div>
           </div>
           <div className="bg-hero3-pattern bg-white h-[100vh] w-[695px] bg-cover bg-no-repeat float-right opacity-25 z-0"></div>
-        </div> */}
+        </div>
       </div>
+
+
       {/* drinks section */}
       {/* <div className="flex justify-center items-center px-40">
         <div className="w-full">
@@ -393,56 +395,58 @@ const Component1 = () => {
 
       {/* {brista party section} */}
 
-      <div className="bg-hero2-pattern bg-center bg-no-repeat pb-36">
-        <div className="rounded-lg lg:max-w-[1200px] w-full mx-auto flex flex-col lg:flex-row shadow-[rgba(50,50,93,0.25)_0px_30px_60px_-12px,rgba(0,0,0,0.3)_0px_18px_36px_-18px] relative">
-          <div className="rounded-l-2xl flex items-center bg-gradient-to-r from-[#AE7E4E] to-[#C59D70] pl-[50px] pr-[20px] py-[40px] lg:w-[60%] w-full">
+      <div className="bg-hero2-pattern bg-center bg-no-repeat pb-36 px-3 md:px-3 lg:px-0">
+        <div className=" lg:max-w-[1200px] w-full mx-auto flex flex-col lg:flex-row shadow-[rgba(50,50,93,0.25)_0px_30px_60px_-12px,rgba(0,0,0,0.3)_0px_18px_36px_-18px] relative">
+         <div className="md:flex bg-[#C59D70] lg:rounded-l-2xl">
+         <div className="lg:rounded-l-2xl rounded-t-2xl flex items-center bg-gradient-to-r from-[#AE7E4E] to-[#C59D70] lg:pl-[50px] pl-5 lg:pr-[20px] py-[40px] lg:w-[60%] w-full">
             <div className="lg:w-[58%]">
-              <h1 className="text-white text-[6.2rem] font-semibold leading-none mb-10">
+              <h1 className="text-white lg:text-[6.2rem] md:text-[6.2rem] text-[4.6rem] font-semibold leading-none lg:mb-10 md:mb-10 mb-5 ">
                 Barista Party
               </h1>
-              <div className="h-[0.8px] w-[60px] bg-white mb-10"></div>
-              <h2 className="text-white text-[2rem] font-semibold">
+              <div className="h-[0.8px] w-[60px] bg-white lg:mb-10 md:mb-10 mb-5 "></div>
+              <h2 className="text-white lg:text-[2rem] md:text-[2rem] text-[1.2rem] font-semibold">
                 Every Friday & Saturday
               </h2>
-              <p className="text-[#D8C6B8] text-[1.1rem] mb-10">
+              <p className="text-[#D8C6B8] lg:text-[1.1rem] md:text-[1.1rem] lg:mb-10 md:mb-10 mb-5">
                 Consectetur adipisicing elit, sed do eiusmod tempor incididunt
                 ut labore et dolore magna aliqua. Ut enim ad minim veniam.
               </p>
-              <div className="flex items-center">
+              <div className="flex items-center lg:text-[1.1rem] md:text[1.1rem]">
                 <FaAngleRight className="text-white" />
-                <p className="text-white text-[1.1rem] ml-2">
+                <p className="text-white ml-2">
                   Make Reservation
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="absolute right-64 top-[-20px] w-[60%] flex justify-center">
+          <div className="lg:absolute right-64 top-[-20px] lg:w-[60%] w-full flex justify-center">
             <img
-              className="w-[650px] h-auto"
+              className="w-[650px] h-auto md:w-full"
               src="src/image/bg-02-free-img (1).png"
               alt="Cup of coffee"
             />
           </div>
+         </div>
 
-          <div className="rounded-r-2xl bg-gradient-to-tr from-[#C8A277] to-[#4F9486] p-14 lg:w-[40%] w-full">
-            <h1 className="text-white text-[3.3rem]">Location</h1>
+          <div className="lg:rounded-r-2xl rounded-b-2xl bg-gradient-to-tr from-[#C8A277] to-[#4F9486] lg:p-14 lg:w-[35%] md:p-14 p-6 w-full">
+            <h1 className="text-white lg:text-[3.3rem] md:text-[3.3rem] text-[2rem]">Location</h1>
             <div className="h-[2px] w-full bg-white mb-6"></div>
-            <p className="text-[#D8C6B8] text-[1.1rem] mb-6">
+            <p className="text-[#D8C6B8] lg:text-[1.1rem] md:text-[1.1rem] text-[0.9rem] mb-6">
               You can find us consectetur elit, sed do eiusmod tempor incididun.
             </p>
             <div className="flex items-center mb-6">
-              <FaLocationDot className="text-white text-[1.5rem] mr-2" />
+              <FaLocationDot className="text-white lg:text-[1.5rem] md:text-[1.5rem] text-[1.1rem] mr-2" />
               <div>
-                <h3 className="text-white text-[1.3rem]">Address</h3>
-                <p className="text-white text-[1.1rem]">
+                <h3 className="text-white lg:text-[1.3rem] md:text-[1.3rem] text-[0.9rem]">Address</h3>
+                <p className="text-white lg:text-[1.1rem] md:text-[1.1rem] text-[0.9rem]">
                   123 Fifth Avenue, New York, NY 10160
                 </p>
               </div>
             </div>
-            <div className="flex items-center">
+            <div className="flex items-center lg:text-[1.1rem] md:text-[1.1rem] text-[0.9rem]">
               <FaAngleRight className="text-white" />
-              <p className="text-white text-[1.1rem] ml-2">
+              <p className="text-white ml-2">
                 See On Google Maps
               </p>
             </div>
@@ -450,9 +454,12 @@ const Component1 = () => {
         </div>
       </div>
 
+
+
+
       {/* footer section */}
 
-      {/* <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center">
        <footer className="text-white py-8 w-[1000px] border-t border-white">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="">
@@ -502,7 +509,7 @@ const Component1 = () => {
           <p>Copyright © 2024 Coffee Shop | Powered by Coffee Shop</p>
         </div>
       </footer>
-       </div> */}
+       </div>
     </div>
   );
 };
