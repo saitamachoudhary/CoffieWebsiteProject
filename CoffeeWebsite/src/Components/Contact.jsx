@@ -7,7 +7,7 @@ const Contact = () => {
       <NavBar/>
       <div className="flex flex-col items-center justify-center min-h-screen text-white">
       <div className="max-w-5xl w-full p-8 rounded">
-        <h1 className="text-7xl font-bold mb-20 mt-20 text-center">Contact</h1>
+        <h1 className="lg:text-7xl md:text-6xl text-5xl font-bold mb-20 mt-20 text-center">Contact</h1>
         <div className="flex flex-col md:flex-row md:justify-between items-center mb-8">
           <div className="flex flex-col items-start md:items-start md:text-left space-y-4">
             <h2 className="text-5xl font-bold">Get in touch</h2>

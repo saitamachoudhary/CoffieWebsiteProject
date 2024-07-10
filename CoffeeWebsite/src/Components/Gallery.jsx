@@ -19,7 +19,7 @@ const Gallery = () => {
     <div className="galleryParent_div">
     <NavBar/>
     <div className='ourMenuh1 pt-28'>
-        <h1 className='text-white lg:text-[5.4rem] md:text-[5rem] text-[4rem] text-center'>Gallery</h1>
+        <h1 className='text-white lg:text-[5.4rem] md:text-[4.5rem] text-[3rem] text-center'>Gallery</h1>
       </div>
       {/* cards */}
      <div className="relative bg-hero2-pattern bg-contain bg-center bg-no-repeat flex items-center justify-center">

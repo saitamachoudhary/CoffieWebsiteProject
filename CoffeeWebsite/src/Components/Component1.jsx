@@ -8,112 +8,38 @@ const Component1 = () => {
   return (
     <div className="h-auto w-full bg-gradient-to-r from-[#7F4625] to-[#A77C4E] relative">
       {/* Hero section */}
-      <div className=" pb-40">
+      <div className="h-auto lg:pb-36 md:pb-44 pb-24">
         <NavBar />
-
-        <div className="flex">
-          <div className="relative top-72 left-40 inline-block">
-            <h2 className=" text-white text-3xl font-extrabold">Welcome!</h2>
-            <h1 className="text-[4.7rem] text-white font-extrabold">
-              We serve the{" "}
+        <div className="flex justify-between lg:max-w-full w-full">
+          <div className="relative  lg:top-72 md:top-60 top-36 lg:left-20 inline-block lg:w-[50%] lg:p-0 md:pl-3 p-3">
+            <h2 className=" text-white text-3xl font-extrabold w-[70%]">Welcome!</h2>
+            <h1 className="lg:text-[4.7rem] md:text-[3.5rem] text-[2.2rem] lg:mb-0 md:mb-0 mb-10 text-white font-extrabold">
+              We serve the richest coffee in the city!
             </h1>
-            <h1 className="text-[4.7rem] text-white font-extrabold">
-              richest coffee in
-            </h1>
-            <h1 className="text-[4.7rem] text-white font-extrabold">
-              the city!
-            </h1>
-            <div className="flex items-center justify-center relative top-[-130px]">
+            <div className="flex flex-col md:flex-row lg:flex-row items-center justify-between lg:relative top-[-130px]">
+              <div className="flex lg:flex-row md:flex-row flex-col items-center justify-center">
               <IoPlayCircleSharp className=" text-white text-[2.5rem]" />
-              <div className="ml-4">
-                <h2 className="text-[1.4rem] text-white">
+                <h2 className="lg:ml-4 text-[1.2rem] text-white inline-block">
                   High quality in every cup of coffee we serve...
                 </h2>
               </div>
               <img
-                className="relative left-40 z-[1]"
+                className="lg:relative w-[400px] top-[-40px] left-72 z-[1]"
                 src="src\image\hero-002-free-img.png"
                 alt=""
               />
             </div>
           </div>
-          <div className="bg-hero3-pattern bg-white h-[100vh] w-[695px] bg-cover bg-no-repeat float-right opacity-25 z-0"></div>
+          <div className="bg-hero3-pattern bg-white lg:relative absolute min-h-screen lg:w-[43%] w-full bg-cover bg-no-repeat opacity-25 z-0"></div>
         </div>
       </div>
 
 
+
+
       {/* drinks section */}
-      {/* <div className="flex justify-center items-center px-40">
-        <div className="w-full">
-          <div className="flex flex-col items-center justify-center mb-10">
-            <h1 className="text-[4.7rem] text-white">Drinks</h1>
-            <div className="h-[0.8px] w-[60px] bg-white mb-3"></div>
-            <p className="text-[#D8C6B8]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus,
-            </p>
-            <p className="text-[#D8C6B8] mb-3">
-              luctus nec ullamcorper mattis.
-            </p>
-            <div className="flex items-center">
-              <FaAngleRight className="text-white" />
-              <p className="text-white">All Drinks</p>
-            </div>
-          </div>
-          <div className="flex justify-between item-center">
-            <div className="h-[540px] w-[350px] bg-gradient-to-tr from-[#9B6638] to-[#C8A277] flex flex-col items-center justify-center rounded-[20px] px-3">
-              <img
-                className=" mb-5"
-                src="src\image\product-01-free-img.png"
-                alt=""
-              />
-              <h3 className="text-white text-[1.5rem]">$ 4.20</h3>
-              <h1 className="text-white text-[3rem] mb-3">Cappuccino</h1>
-              <p className="text-center text-[#D8C6B8] mb-10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus.
-              </p>
-              <button className="bg-white w-full h-[55px] rounded-[10px]">
-                Get Delivery
-              </button>
-            </div>
-            <div className="h-[540px] w-[350px] bg-gradient-to-tr from-[#4F9486] to-[#C8A277] flex flex-col items-center justify-center rounded-[20px] px-3">
-              <img
-                className=" mb-5"
-                src="src\image\product-02-free-img.png"
-                alt=""
-              />
-              <h3 className="text-white text-[1.5rem]">$ 3.15</h3>
-              <h1 className="text-white text-[3rem] mb-3">Cafe Latte</h1>
-              <p className="text-center text-[#D8C6B8] mb-10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus.
-              </p>
-              <button className="bg-white w-full h-[55px] rounded-[10px]">
-                Get Delivery
-              </button>
-            </div>
-            <div className="h-[540px] w-[350px] bg-gradient-to-tr from-[#27201E] to-[#453C3A] flex flex-col items-center justify-center rounded-[20px] px-3">
-              <img
-                className=" mb-5"
-                src="src\image\product-03-free-img.png"
-                alt=""
-              />
-              <h3 className="text-white text-[1.5rem]">$ 2.75</h3>
-              <h1 className="text-white text-[3rem] mb-3">Dark Coffee</h1>
-              <p className="text-center text-[#D8C6B8] mb-10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-                tellus.
-              </p>
-              <button className="bg-white w-full h-[55px] rounded-[10px]">
-                Get Delivery
-              </button>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className="flex flex-col min-h-screen lg:flex-row md:flex-row items-center justify-center px-5 py-10 w-full">
-        <div className="w-auto">
+        <div className="lg:max-w-[1200px] w-full">
           <div className="flex flex-col items-center justify-center mb-10 text-center">
             <h1 className="text-6xl lg:text-[4.7rem] font-bold text-white mb-5">
               Drinks
@@ -132,7 +58,7 @@ const Component1 = () => {
             </div>
           </div>
           <div className="flex flex-col lg:flex-row md:flex-row justify-center space-y-5 lg:space-y-0 lg:space-x-5 md:space-x-5">
-            <div className="w-full lg:w-1/4 h-auto bg-gradient-to-tr from-[#9B6638] to-[#C8A277] flex flex-col items-center justify-center rounded-[20px] px-3 py-3">
+            <div className="w-full lg:mx-w-1/4 h-auto bg-gradient-to-tr from-[#9B6638] to-[#C8A277] flex flex-col items-center justify-center rounded-[20px] px-3 py-3">
               <img
                 className="mb-3 h-auto"
                 src="src/image/product-01-free-img.png"
@@ -142,7 +68,7 @@ const Component1 = () => {
               <h1 className="text-white text-[2rem] lg:text-[3rem] mb-3">
                 Cappuccino
               </h1>
-              <p className="text-center text-[#D8C6B8] mb-10">
+              <p className="text-center text-[#D8C6B8] mb-10 md:mb-12">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                 tellus.
               </p>
@@ -150,7 +76,7 @@ const Component1 = () => {
                 Get Delivery
               </button>
             </div>
-            <div className="w-full lg:w-1/4 h-auto bg-gradient-to-tr from-[#4F9486] to-[#C8A277] flex flex-col items-center justify-center rounded-[20px] px-3 py-3">
+            <div className="w-full lg:mx-w-1/4 h-auto bg-gradient-to-tr from-[#4F9486] to-[#C8A277] flex flex-col items-center justify-center rounded-[20px] px-3 py-3">
               <img
                 className="mb-3 h-auto"
                 src="src/image/product-02-free-img.png"
@@ -168,7 +94,7 @@ const Component1 = () => {
                 Get Delivery
               </button>
             </div>
-            <div className="w-full lg:w-1/4 h-auto bg-gradient-to-tr from-[#27201E] to-[#453C3A] flex flex-col items-center justify-center rounded-[20px] px-3 py-3">
+            <div className="w-full lg:mx-w-1/4 h-auto bg-gradient-to-tr from-[#27201E] to-[#453C3A] flex flex-col items-center justify-center rounded-[20px] px-3 py-3">
               <img
                 className="mb-3 h-auto"
                 src="src/image/product-03-free-img.png"
@@ -192,9 +118,9 @@ const Component1 = () => {
 
       {/* Croissants Section */}
 
-      <div className="flex items-center justify-center lg:px-40 px-10 w-full">
-        <div className="flex flex-col lg:flex-row md:flex-row items-center justify-between">
-          <div className="left_div lg:pl-16 md:pl-5 text-center lg:text-left md:text-left">
+      <div className="flex items-center justify-center w-full pb-10">
+        <div className="flex flex-col lg:flex-row md:flex-row items-center justify-between px-10 lg:max-w-full">
+          <div className="left_div  md:pl-5 text-center lg:text-left md:text-left">
             <h4 className="text-[#D8C6B8] text-[1.2rem] font-semibold">
               From $2.50
             </h4>
@@ -216,7 +142,7 @@ const Component1 = () => {
           </div>
           <div className="right-div">
             <img
-              className="lg:ml-40 md:ml-30 h-auto"
+              className="h-auto"
               src="src\image\croissant-01-free-img.png"
               alt=""
             />
@@ -226,38 +152,6 @@ const Component1 = () => {
 
       {/* Buy from Home section */}
 
-      {/* <div className="px-40 flex items-center justify-center">
-        <div className="w-full bg-gradient-to-r from-[#AE7E4E] to-[#C59D70] flex items-center justify-center rounded-[20px] shadow-[rgba(50,50,93,0.25)_0px_30px_60px_-12px,rgba(0,0,0,0.3)_0px_18px_36px_-18px]">
-          <div>
-            <img src="src\image\coffee-01-free-img.png" alt="" />
-          </div>
-          <div>
-            <div className="w-[500px]">
-              <h4 className="text-[#D8C6B8] text-[1.2rem] font-semibold">
-                From $19.50
-              </h4>
-              <h1 className="text-white text-[4rem] font-semibold">
-                Buy for Home
-              </h1>
-              <div className="h-[0.8px] w-[60px] bg-white mb-6"></div>
-              <h2 className="text-white text-[1.8rem] font-semibold">
-                Totam rem aperiam
-              </h2>
-              <p className="text-[#D8C6B8]">
-                Lorem ipsum dolor sit amet, consectetur
-              </p>
-              <p className="text-[#D8C6B8] mb-8">
-                adipiscing elit. Ut elit tellus.
-              </p>
-
-              <div className="flex items-center">
-                <FaAngleRight className="text-white" />
-                <p className="text-white">All Coffee</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
       <div className="px-4 flex items-center justify-center">
         <div className=" w-full lg:max-w-6xl bg-gradient-to-r from-[#AE7E4E] to-[#C59D70] flex flex-col md:flex-row items-center justify-center rounded-[20px] shadow-[rgba(50,50,93,0.25)_0px_30px_60px_-12px,rgba(0,0,0,0.3)_0px_18px_36px_-18px] p-6">
           <div className="w-auto h-auto">
@@ -294,54 +188,7 @@ const Component1 = () => {
       </div>
 
       {/* About */}
-      {/* <div className="min-h-screen bg-hero-pattern bg-center bg-cover bg-no-repeat mt-20 flex items-center justify-center pb-10">
-        <div className="">
-          <div className="flex flex-col items-center justify-center">
-            <h1 className="text-[4.7rem] text-white">About</h1>
-            <div className="h-[0.8px] w-[60px] bg-white mb-3"></div>
-            <p className="text-[#D8C6B8]">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus,
-            </p>
-            <p className="text-[#D8C6B8] mb-3">
-              luctus nec ullamcorper mattis.
-            </p>
-          </div>
-          <div className="grid grid-cols-2 gap-10 mt-10">
-            <div className="w-[300px] grid gap-1">
-              <h4 className="text-white text-lg font-bold">
-                Tailored-Made Coffee
-              </h4>
-              <h1 className="text-white text-5xl font-bold leading-snug">
-                We offer a unique coffee house environment unlike any other in
-                N.Y.
-              </h1>
-            </div>
-            <div className="grid gap-8 w-[400px]">
-              <h3 className="text-white text-xl font-bold">
-                The perfect place to enjoy your coffee
-              </h3>
-              <p className="text-[#D8C6B8]">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris.
-              </p>
-              <p className="text-[#D8C6B8]">
-                Consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-              </p>
-              <p className="text-[#D8C6B8]">
-                Consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-              </p>
-              <div className="flex items-center">
-                <FaAngleRight className="text-white" />
-                <p className="text-white">Read More</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> */}
+     
       <div className="min-h-screen bg-hero-pattern bg-center bg-contain bg-no-repeat mt-20 flex items-center justify-center pb-10">
         <div className="w-full max-w-5xl px-4">
           <div className="flex flex-col items-center justify-center text-center">
@@ -396,8 +243,8 @@ const Component1 = () => {
       {/* {brista party section} */}
 
       <div className="bg-hero2-pattern bg-center bg-no-repeat pb-36 px-3 md:px-3 lg:px-0">
-        <div className=" lg:max-w-[1200px] w-full mx-auto flex flex-col lg:flex-row shadow-[rgba(50,50,93,0.25)_0px_30px_60px_-12px,rgba(0,0,0,0.3)_0px_18px_36px_-18px] relative">
-         <div className="md:flex bg-[#C59D70] lg:rounded-l-2xl">
+        <div className=" lg:max-w-[1200px] w-full mx-auto flex flex-col lg:flex-row shadow-[rgba(0,0,0,0.3)_0px_18px_36px_-18px] relative">
+         <div className="md:flex lg:bg-gradient-to-r from-[#C59D70] to-[#C59D70] md:bg-gradient-to-r from-[#C59D70] to-[#C59D70] bg-gradient-to-r from-[#AE7E4E] to-[#C59D70] bg lg:rounded-l-2xl rounded-t-2xl">
          <div className="lg:rounded-l-2xl rounded-t-2xl flex items-center bg-gradient-to-r from-[#AE7E4E] to-[#C59D70] lg:pl-[50px] pl-5 lg:pr-[20px] py-[40px] lg:w-[60%] w-full">
             <div className="lg:w-[58%]">
               <h1 className="text-white lg:text-[6.2rem] md:text-[6.2rem] text-[4.6rem] font-semibold leading-none lg:mb-10 md:mb-10 mb-5 ">
@@ -459,7 +306,7 @@ const Component1 = () => {
 
       {/* footer section */}
 
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center px-4">
        <footer className="text-white py-8 w-[1000px] border-t border-white">
         <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="">

@@ -7,12 +7,12 @@ const About = () => {
      <div className='bg-aboutbgimg bg-contain bg-no-repeat bg-center'>
      <NavBar />
      </div>
-      <div className='ourMenuh1 pt-28'>
+      <div className='ourMenuh1 pt-24'>
         <h1 className='text-white lg:text-[5.4rem] md:text-[5rem] text-[4rem] text-center'>About</h1>
       </div>
       {/* Tailored-Made Coffee */}
       <div className="bg-contain bg-center bg-no-repeat bg-hero-pattern w-full">
-        <div className="container mx-auto px-6 py-16 lg:py-32 text-white lg:w-[900px]">
+        <div className="container mx-auto px-6 py-16 lg:py-24 text-white lg:w-[900px]">
           <header className=" mb-9">
             <p className="mt-4 text-[1rem] font-bold mb-7">Tailored-Made Coffee</p>
             <h1 className="text-4xl lg:text-6xl font-bold">We offer a unique coffee house environment unlike any other in N.Y.</h1>
