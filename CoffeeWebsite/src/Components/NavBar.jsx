@@ -13,7 +13,7 @@ const NavBar = () => {
   };
 
   return (
-    <div className={`${parentStyle} ${location.pathname === '/' ? 'absolute' : 'relative'}`}>
+    <div className={`${parentStyle} ${location.pathname === '/' ? 'absolute' : 'relative bg-navbgimg'}`}>
 
       <div className="w-full flex justify-between items-center px-4 py-2 md:hidden absolute top-0 left-0">
         <img className='lg:w-[138px] md:w-[138px] w-[90px]' src='/src/image/logo-retina-free-img.png' alt="Logo" />

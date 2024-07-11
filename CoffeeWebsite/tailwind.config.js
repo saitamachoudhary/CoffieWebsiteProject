@@ -9,9 +9,9 @@ export default {
       backgroundImage: {
         'hero-pattern': "url('./public/images/bg-0001-free-img.png')",
         'hero2-pattern': "url('./public/images/bg-005-free-img.png')",
-        'hero3-pattern': "url('./src/image/hero-01-free-img.png')",
+        'hero3-pattern': "url('./src/image/hero-01-free-img.jpg')",
         'ourMenuCoffeeForHome':"url('./src/image/bg-04-free-img.png')",
-        'aboutbgimg':"url('.src/image/bg-0006-free-img.png')",
+        'navbgimg':"url('.src/image/bg-0006-free-img.png')",
       },
     },
   },

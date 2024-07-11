@@ -3,39 +3,47 @@ import { FaAngleRight } from "react-icons/fa6";
 import { FaLocationDot } from "react-icons/fa6";
 import NavBar from "./NavBar";
 import { IoPlayCircleSharp } from "react-icons/io5";
+import Footer from "./Footer";
 
 const Component1 = () => {
   return (
     <div className="h-auto w-full bg-gradient-to-r from-[#7F4625] to-[#A77C4E] relative">
       {/* Hero section */}
-      <div className="h-auto lg:pb-36 md:pb-44 pb-24">
+      <div className="min-h-screen lg:pb-36 md:pb-44 pb-24">
         <NavBar />
         <div className="flex justify-between lg:max-w-full w-full">
-          <div className="relative  lg:top-72 md:top-60 top-36 lg:left-20 inline-block lg:w-[50%] lg:p-0 md:pl-3 p-3">
-            <h2 className=" text-white text-3xl font-extrabold w-[70%]">Welcome!</h2>
+          <div className="relative  lg:top-72 md:top-60 top-36 lg:left-20 inline-block lg:w-[50%] lg:p-0 md:pl-3 p-3 z-1">
+            <h2 className=" text-white text-3xl font-extrabold w-[70%]">
+              Welcome!
+            </h2>
             <h1 className="lg:text-[4.7rem] md:text-[3.5rem] text-[2.2rem] lg:mb-0 md:mb-0 mb-10 text-white font-extrabold">
               We serve the richest coffee in the city!
             </h1>
-            <div className="flex flex-col md:flex-row lg:flex-row items-center justify-between lg:relative top-[-130px]">
-              <div className="flex lg:flex-row md:flex-row flex-col items-center justify-center">
+            <div className="flex mt-14 w-[16rem] lg:visible invisible lg:flex-row md:flex-row flex-col items-center justify-center">
               <IoPlayCircleSharp className=" text-white text-[2.5rem]" />
-                <h2 className="lg:ml-4 text-[1.2rem] text-white inline-block">
-                  High quality in every cup of coffee we serve...
-                </h2>
+              <span className="lg:ml-4 text-[1.2rem] text-white">
+                High quality in every cup of coffee we serve...
+              </span>
+            </div>
+            <div className="flex flex-col md:flex-row lg:flex-row items-center md:items-start justify-between lg:relative top-[-130px]">
+              <div className="flex lg:flex-row md:flex-row flex-col items-center justify-center">
+                <div className="lg:invisible visible flex flex-col lg:flex-row md:flex-row items-center justify-center">
+                  <IoPlayCircleSharp className=" text-white text-[2.5rem]" />
+                  <span className="lg:ml-4 text-[1.2rem] text-white">
+                    High quality in every cup of coffee we serve...
+                  </span>
+                </div>
               </div>
               <img
-                className="lg:relative w-[400px] top-[-40px] left-72 z-[1]"
+                className="lg:relative w-[400px] lg:-mt-24 md:-mt-24 left-72 z-[1]"
                 src="src\image\hero-002-free-img.png"
                 alt=""
               />
             </div>
           </div>
-          <div className="bg-hero3-pattern bg-white lg:relative absolute min-h-screen lg:w-[43%] w-full bg-cover bg-no-repeat opacity-25 z-0"></div>
+          <div className="bg-hero3-pattern bg-white lg:relative absolute lg:h-auto min-h-[34rem] lg:w-[43%] w-full bg-cover bg-center bg-no-repeat opacity-25 -z-1"></div>
         </div>
       </div>
-
-
-
 
       {/* drinks section */}
       <div className="flex flex-col min-h-screen lg:flex-row md:flex-row items-center justify-center px-5 py-10 w-full">
@@ -57,7 +65,7 @@ const Component1 = () => {
               <p className="text-white ml-1">All Drinks</p>
             </div>
           </div>
-          <div className="flex flex-col lg:flex-row md:flex-row justify-center space-y-5 lg:space-y-0 lg:space-x-5 md:space-x-5">
+          <div className="flex flex-col lg:flex-row md:flex-row justify-center space-y-5 lg:space-y-0 lg:space-x-5 md:space-x-5 md:space-y-0">
             <div className="w-full lg:mx-w-1/4 h-auto bg-gradient-to-tr from-[#9B6638] to-[#C8A277] flex flex-col items-center justify-center rounded-[20px] px-3 py-3">
               <img
                 className="mb-3 h-auto"
@@ -68,7 +76,7 @@ const Component1 = () => {
               <h1 className="text-white text-[2rem] lg:text-[3rem] mb-3">
                 Cappuccino
               </h1>
-              <p className="text-center text-[#D8C6B8] mb-10 md:mb-12">
+              <p className="text-center text-[#D8C6B8] mb-10">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                 tellus.
               </p>
@@ -188,13 +196,11 @@ const Component1 = () => {
       </div>
 
       {/* About */}
-     
+
       <div className="min-h-screen bg-hero-pattern bg-center bg-contain bg-no-repeat mt-20 flex items-center justify-center pb-10">
         <div className="w-full max-w-5xl px-4">
           <div className="flex flex-col items-center justify-center text-center">
-            <h1 className="text-[3.5rem] md:text-[4.7rem] text-white">
-              About
-            </h1>
+            <h1 className="text-[3.5rem] md:text-[4.7rem] text-white">About</h1>
             <div className="h-[0.8px] w-[60px] bg-white mb-3"></div>
             <p className="text-[#D8C6B8]">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
@@ -244,40 +250,40 @@ const Component1 = () => {
 
       <div className="bg-hero2-pattern bg-center bg-no-repeat pb-36 px-3 md:px-3 lg:px-0">
         <div className=" lg:max-w-[1200px] w-full mx-auto flex flex-col lg:flex-row shadow-[rgba(0,0,0,0.3)_0px_18px_36px_-18px] relative">
-         <div className="md:flex lg:bg-gradient-to-r from-[#C59D70] to-[#C59D70] md:bg-gradient-to-r from-[#C59D70] to-[#C59D70] bg-gradient-to-r from-[#AE7E4E] to-[#C59D70] bg lg:rounded-l-2xl rounded-t-2xl">
-         <div className="lg:rounded-l-2xl rounded-t-2xl flex items-center bg-gradient-to-r from-[#AE7E4E] to-[#C59D70] lg:pl-[50px] pl-5 lg:pr-[20px] py-[40px] lg:w-[60%] w-full">
-            <div className="lg:w-[58%]">
-              <h1 className="text-white lg:text-[6.2rem] md:text-[6.2rem] text-[4.6rem] font-semibold leading-none lg:mb-10 md:mb-10 mb-5 ">
-                Barista Party
-              </h1>
-              <div className="h-[0.8px] w-[60px] bg-white lg:mb-10 md:mb-10 mb-5 "></div>
-              <h2 className="text-white lg:text-[2rem] md:text-[2rem] text-[1.2rem] font-semibold">
-                Every Friday & Saturday
-              </h2>
-              <p className="text-[#D8C6B8] lg:text-[1.1rem] md:text-[1.1rem] lg:mb-10 md:mb-10 mb-5">
-                Consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-              </p>
-              <div className="flex items-center lg:text-[1.1rem] md:text[1.1rem]">
-                <FaAngleRight className="text-white" />
-                <p className="text-white ml-2">
-                  Make Reservation
+          <div className="md:flex bg-gradient-to-r from-[#C59D70] to-[#C59D70]  lg:rounded-l-2xl lg:rounded-tl-2xl lg:rounded-t-none rounded-t-2xl">
+            <div className="lg:rounded-l-2xl rounded-t-2xl flex items-center bg-gradient-to-r from-[#AE7E4E] to-[#C59D70] lg:pl-[50px] pl-5 lg:pr-[20px] py-[40px] lg:w-[60%] w-full">
+              <div className="lg:w-[58%]">
+                <h1 className="text-white lg:text-[6.2rem] md:text-[6.2rem] text-[4.6rem] font-semibold leading-none lg:mb-10 md:mb-10 mb-5 ">
+                  Barista Party
+                </h1>
+                <div className="h-[0.8px] w-[60px] bg-white lg:mb-10 md:mb-10 mb-5 "></div>
+                <h2 className="text-white lg:text-[2rem] md:text-[2rem] text-[1.2rem] font-semibold">
+                  Every Friday & Saturday
+                </h2>
+                <p className="text-[#D8C6B8] lg:text-[1.1rem] md:text-[1.1rem] lg:mb-10 md:mb-10 mb-5">
+                  Consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                 </p>
+                <div className="flex items-center lg:text-[1.1rem] md:text[1.1rem]">
+                  <FaAngleRight className="text-white" />
+                  <p className="text-white ml-2">Make Reservation</p>
+                </div>
               </div>
+            </div>
+
+            <div className="lg:absolute right-64 top-[-20px] lg:w-[60%] w-full flex justify-center">
+              <img
+                className="w-[650px] h-auto md:w-full"
+                src="src/image/bg-02-free-img (1).png"
+                alt="Cup of coffee"
+              />
             </div>
           </div>
 
-          <div className="lg:absolute right-64 top-[-20px] lg:w-[60%] w-full flex justify-center">
-            <img
-              className="w-[650px] h-auto md:w-full"
-              src="src/image/bg-02-free-img (1).png"
-              alt="Cup of coffee"
-            />
-          </div>
-         </div>
-
-          <div className="lg:rounded-r-2xl rounded-b-2xl bg-gradient-to-tr from-[#C8A277] to-[#4F9486] lg:p-14 lg:w-[35%] md:p-14 p-6 w-full">
-            <h1 className="text-white lg:text-[3.3rem] md:text-[3.3rem] text-[2rem]">Location</h1>
+          <div className="lg:rounded-r-2xl lg:rounded-bl-none rounded-b-2xl bg-gradient-to-tr from-[#C8A277] to-[#4F9486] lg:p-14 lg:w-[35%] md:p-14 p-6 w-full">
+            <h1 className="text-white lg:text-[3.3rem] md:text-[3.3rem] text-[2rem]">
+              Location
+            </h1>
             <div className="h-[2px] w-full bg-white mb-6"></div>
             <p className="text-[#D8C6B8] lg:text-[1.1rem] md:text-[1.1rem] text-[0.9rem] mb-6">
               You can find us consectetur elit, sed do eiusmod tempor incididun.
@@ -285,7 +291,9 @@ const Component1 = () => {
             <div className="flex items-center mb-6">
               <FaLocationDot className="text-white lg:text-[1.5rem] md:text-[1.5rem] text-[1.1rem] mr-2" />
               <div>
-                <h3 className="text-white lg:text-[1.3rem] md:text-[1.3rem] text-[0.9rem]">Address</h3>
+                <h3 className="text-white lg:text-[1.3rem] md:text-[1.3rem] text-[0.9rem]">
+                  Address
+                </h3>
                 <p className="text-white lg:text-[1.1rem] md:text-[1.1rem] text-[0.9rem]">
                   123 Fifth Avenue, New York, NY 10160
                 </p>
@@ -293,70 +301,14 @@ const Component1 = () => {
             </div>
             <div className="flex items-center lg:text-[1.1rem] md:text-[1.1rem] text-[0.9rem]">
               <FaAngleRight className="text-white" />
-              <p className="text-white ml-2">
-                See On Google Maps
-              </p>
+              <p className="text-white ml-2">See On Google Maps</p>
             </div>
           </div>
         </div>
       </div>
 
-
-
-
       {/* footer section */}
-
-      <div className="flex items-center justify-center px-4">
-       <footer className="text-white py-8 w-[1000px] border-t border-white">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="">
-            <h2 className="text-xl font-semibold mb-4">About us</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
-              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-            </p>
-            <div className="flex mt-4 space-x-4">
-              <a href="#" className="bg-white p-2 rounded-full">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/733/733547.png"
-                  alt="Facebook"
-                  className="w-6 h-6"
-                />
-              </a>
-              <a href="#" className="bg-white p-2 rounded-full">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/733/733579.png"
-                  alt="Twitter"
-                  className="w-6 h-6"
-                />
-              </a>
-              <a href="#" className="bg-white p-2 rounded-full">
-                <img
-                  src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
-                  alt="YouTube"
-                  className="w-6 h-6"
-                />
-              </a>
-            </div>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold mb-4">Contact</h2>
-            <p>13 Fifth Avenue, New York, NY 10160</p>
-            <p>929-242-6868</p>
-            <p>contact@info.com</p>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold mb-4">Opening hours</h2>
-            <p>Mon – Fri — 8AM – 8PM</p>
-            <p>Saturday — 8AM – 4PM</p>
-            <p>Sunday — 8AM – 2PM</p>
-          </div>
-        </div>
-        <div className="mt-8 border-t border-white pt-4 text-center">
-          <p>Copyright © 2024 Coffee Shop | Powered by Coffee Shop</p>
-        </div>
-      </footer>
-       </div>
+        <Footer/>
     </div>
   );
 };
