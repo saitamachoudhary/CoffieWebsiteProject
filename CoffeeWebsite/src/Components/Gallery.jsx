@@ -19,7 +19,7 @@ const Gallery = () => {
   return (
     <div className="galleryParent_div">
     <NavBar/>
-    <div className='ourMenuh1 pt-28'>
+    <div className='ourMenuh1 lg:mt-0 mt-20'>
         <h1 className='text-white lg:text-[5.4rem] md:text-[4.5rem] text-[3rem] text-center'>Gallery</h1>
       </div>
       {/* cards */}

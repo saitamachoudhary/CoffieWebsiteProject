@@ -8,7 +8,7 @@ const About = () => {
      <div className='bg-aboutbgimg bg-contain bg-no-repeat bg-center'>
      <NavBar />
      </div>
-      <div className='ourMenuh1 pt-24'>
+      <div className='ourMenuh1 lg:mt-0 mt-20'>
         <h1 className='text-white lg:text-[5.4rem] md:text-[5rem] text-[4rem] text-center'>About</h1>
       </div>
       {/* Tailored-Made Coffee */}

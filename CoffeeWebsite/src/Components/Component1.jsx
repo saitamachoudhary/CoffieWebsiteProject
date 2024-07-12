@@ -41,7 +41,7 @@ const Component1 = () => {
               />
             </div>
           </div>
-          <div className="bg-hero3-pattern bg-white lg:relative absolute lg:h-auto min-h-[34rem] lg:w-[43%] w-full bg-cover bg-center bg-no-repeat opacity-25 -z-1"></div>
+          <div className="bg-hero3-pattern lg:relative absolute lg:h-auto min-h-[34rem] lg:w-[43%] w-full bg-cover bg-center bg-no-repeat opacity-25 -z-1"></div>
         </div>
       </div>
 
@@ -132,11 +132,11 @@ const Component1 = () => {
             <h4 className="text-[#D8C6B8] text-[1.2rem] font-semibold">
               From $2.50
             </h4>
-            <h1 className="text-white text-[4rem] font-semibold mb-3">
+            <h1 className="text-white lg:text-[4rem] md:text-[4rem] text-[2.1rem] font-semibold mb-3">
               Croissants
             </h1>
             <div className="h-[0.8px] w-[60px] bg-white mb-6 mx-auto lg:mx-0 md:mx-0"></div>
-            <h2 className="text-white text-[1.8rem] font-semibold">
+            <h2 className="text-white lg:text-[1.8rem] md:text-[1.8rem] text-[1.4rem] font-semibold">
               Duis aute irure quasi
             </h2>
             <p className="text-[#D8C6B8] mb-8">
@@ -174,14 +174,14 @@ const Component1 = () => {
               <h4 className="text-[#D8C6B8] text-[1rem] sm:text-[1.2rem] font-semibold">
                 From $19.50
               </h4>
-              <h1 className="text-white text-[3rem] md:text-[4rem] font-semibold">
+              <h1 className="text-white text-[2rem] md:text-[4rem] font-semibold">
                 Buy for Home
               </h1>
               <div className="h-[0.8px] w-[40px] sm:w-[60px] bg-white mb-4 sm:mb-6"></div>
               <h2 className="text-white text-[1.5rem] md:text-[1.8rem] font-semibold">
                 Totam rem aperiam
               </h2>
-              <p className="text-[#D8C6B8] text-[1rem] mb-4">
+              <p className="text-[#D8C6B8] lg:text-[1rem] md:text-[1rem] text-[0.9rem] mb-4 text-center lg:text-left md:text-left">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                 tellus.
               </p>
@@ -252,8 +252,8 @@ const Component1 = () => {
         <div className=" lg:max-w-[1200px] w-full mx-auto flex flex-col lg:flex-row shadow-[rgba(0,0,0,0.3)_0px_18px_36px_-18px] relative">
           <div className="md:flex bg-gradient-to-r from-[#C59D70] to-[#C59D70]  lg:rounded-l-2xl lg:rounded-tl-2xl lg:rounded-t-none rounded-t-2xl">
             <div className="lg:rounded-l-2xl rounded-t-2xl flex items-center bg-gradient-to-r from-[#AE7E4E] to-[#C59D70] lg:pl-[50px] pl-5 lg:pr-[20px] py-[40px] lg:w-[60%] w-full">
-              <div className="lg:w-[58%]">
-                <h1 className="text-white lg:text-[6.2rem] md:text-[6.2rem] text-[4.6rem] font-semibold leading-none lg:mb-10 md:mb-10 mb-5 ">
+              <div className="lg:w-[58%] text-wrap">
+                <h1 className="text-white lg:text-[6.2rem] md:text-[6.2rem] text-[4.6rem] font-semibold leading-none lg:mb-10 md:mb-10 mb-5">
                   Barista Party
                 </h1>
                 <div className="h-[0.8px] w-[60px] bg-white lg:mb-10 md:mb-10 mb-5 "></div>

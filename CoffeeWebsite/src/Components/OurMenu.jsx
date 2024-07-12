@@ -1,7 +1,10 @@
 // import '../Styles/ourmenu.css'
 import Footer from './Footer';
 import NavBar from './NavBar';
+import React from 'react';
 const OurMenu = () => {
+  const [count,setcount]=React.useState(0);
+  const [selectedItem,setSelecteditem]=React.useState([]);
   const drinks = [
     { name: 'Cappuccino', price: '$4.20', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.', img: 'src/image/product-01-free-img.png',color:'bg-[linear-gradient(45deg,#A77443_0%,#C39868_100%)]'},
     { name: 'Cafe Latte', price: '$3.15', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.', img: 'src/image/product-02-free-img.png',color:'bg-[linear-gradient(45deg,#4C8D81_0%,#C39868_100%)]'},
@@ -18,15 +21,22 @@ const OurMenu = () => {
     { name: 'Arabica', price: '$24.20', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.', img: 'src/image/product-06-free-img.png',color:'bg-[linear-gradient(45deg,#A77443_0%,#C39868_100%)]'},
     { name: 'Robusta', price: '$29.50', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.', img: 'src/image/product-05-free-img.png',color:'bg-[linear-gradient(45deg,#A77443_0%,#C39868_100%)]'},
     { name: 'Excelsa', price: '$34.90', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.', img: 'src/image/product-04-free-img.png',color:'bg-[linear-gradient(45deg,#A77443_0%,#C39868_100%)]'},
-  ]
+  ];
+
+  const countIncrementor=(index)=>{
+    setcount(count+1);
+    drinks.forEach((val,valindex)=>{
+        (index===valindex)?setSelecteditem(prev=>[...prev,val]):[];
+    })
+  }
   return (
     <div className="h-auto w-full bg-[linear-gradient(to_right,#7F4625,#A77C4E)]">
-      <NavBar />
-      <div className='ourMenuh1 pt-28'>
+      <NavBar values={{items:selectedItem,count:count}} />
+      <div className='ourMenuh1 lg:mt-0 mt-20'>
         <h1 className='text-white lg:text-[5.6rem] md:text-[4rem] text-[3rem] text-center'>Our Menu</h1>
       </div>
       {/* Drinks section */}
-      <div className="DrinkSection w-full text-white">
+      <div className="DrinkSection w-full text-white bg-ourMenuCoffeeForHome2 bg-contain bg-no-repeat bg-bottom">
         <div className="flex flex-col items-center">
           <h1 className="lg:text-[4.6666666666667rem] md:text-[3.9rem] text-[2.7rem] font-bold mt-8">Drinks</h1>
           <div className="h-[0.8px] w-[60px] bg-white mb-3"></div>
@@ -38,15 +48,18 @@ const OurMenu = () => {
                 <p className="text-[1.3333333333333rem] font-semibold">{drink.price}</p>
                 <h2 className="text-[2rem] font-bold">{drink.name}</h2>
                 <p className="text-center text-[0.9rem] text-[#D8C6B8] ">{drink.description}</p>
+                <button onClick={()=>countIncrementor(index)} className="bg-white text-black w-full h-[45px] rounded-[10px]">
+                Get Delivery
+              </button>
               </div>
             ))}
           </div>
         </div>
       </div>
       {/*Coffee For Home*/}
-      <div className="DrinkSection bg-ourMenuCoffeeForHome bg-contain bg-no-repeat text-white mt-20 mb-20">
+      <div className="DrinkSection bg-ourMenuCoffeeForHome bg-contain bg-no-repeat text-white mb-20">
         <div className="flex flex-col items-center">
-          <h1 className="lg:text-[4rem] font-bold md:text-[3.5rem]">Coffee For Home</h1>
+          <h1 className="lg:text-[4rem] font-bold md:text-[3.5rem] text-[2.3rem] mt-20">Coffee For Home</h1>
           <div className="h-[0.8px] w-[60px] bg-white mb-3"></div>
           <p className="text-[#D8C6B8] text-center text-[0.9rem] mb-16 lg:w-[600px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">

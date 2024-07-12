@@ -3,7 +3,7 @@ import NavBar from "./NavBar";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import Swal from 'sweetalert2'
+import Swal from "sweetalert2";
 import Footer from "./Footer";
 
 const Contact = () => {
@@ -21,9 +21,7 @@ const Contact = () => {
       lastname: Yup.string()
         .required("Required")
         .min(3, "Lastname must be at least 3 characters"),
-      email: Yup.string()
-        .email('Invalid email address')
-        .required('Required'),
+      email: Yup.string().email("Invalid email address").required("Required"),
       text: Yup.string()
         .required("Required")
         .min(5, "Text must be at least 5 characters"),
@@ -33,7 +31,7 @@ const Contact = () => {
         title: "Good job!",
         html: `<p>Name: ${values.firstname} ${values.lastname}</p>
                <p>Email: ${values.email}</p>`,
-        icon: "success"
+        icon: "success",
       });
       formik.resetForm();
     },
@@ -44,7 +42,7 @@ const Contact = () => {
       <NavBar />
       <div className="flex flex-col items-center justify-center min-h-screen">
         <div className="max-w-5xl w-full p-8 rounded">
-          <h1 className="lg:text-7xl md:text-6xl text-5xl font-bold mb-20 mt-20 text-center text-white">
+          <h1 className="lg:text-7xl md:text-6xl text-5xl font-bold mb-20 lg:mt-0 mt-20 text-center text-white">
             Contact
           </h1>
           <div className="flex flex-col md:flex-row md:justify-between lg:items-center md:items-center mb-8">
@@ -104,7 +102,9 @@ const Contact = () => {
                       className="p-4 border rounded-md w-full"
                     />
                     {formik.touched.firstname && formik.errors.firstname ? (
-                      <div className="text-[#CAB79F] mt-1">{formik.errors.firstname}</div>
+                      <div className="text-[#CAB79F] mt-1">
+                        {formik.errors.firstname}
+                      </div>
                     ) : null}
                   </div>
                   <div className="flex flex-col w-full">
@@ -119,7 +119,9 @@ const Contact = () => {
                       className="p-4 border rounded-md w-full"
                     />
                     {formik.touched.lastname && formik.errors.lastname ? (
-                      <div className="text-[#CAB79F] mt-1">{formik.errors.lastname}</div>
+                      <div className="text-[#CAB79F] mt-1">
+                        {formik.errors.lastname}
+                      </div>
                     ) : null}
                   </div>
                 </div>
@@ -135,7 +137,9 @@ const Contact = () => {
                     className="w-full p-4 border rounded-md"
                   />
                   {formik.touched.email && formik.errors.email ? (
-                    <div className="text-[#CAB79F] mt-1">{formik.errors.email}</div>
+                    <div className="text-[#CAB79F] mt-1">
+                      {formik.errors.email}
+                    </div>
                   ) : null}
                 </div>
                 <div className="flex flex-col w-full">
@@ -149,7 +153,9 @@ const Contact = () => {
                     className="w-full p-4 border rounded-md h-32"
                   ></textarea>
                   {formik.touched.text && formik.errors.text ? (
-                    <div className="text-[#CAB79F] mt-1">{formik.errors.text}</div>
+                    <div className="text-[#CAB79F] mt-1">
+                      {formik.errors.text}
+                    </div>
                   ) : null}
                 </div>
                 <button
@@ -163,8 +169,24 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      {/* Map */}
+      <div className="Map flex items-center justify-center mb-10 lg:px-16 md:px-12 px-4">
+        <div className="w-full bg-white">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d234700.90003429714!2d77.24107612234684!3d23.199323868702905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c428f8fd68fbd%3A0x2155716d572d4f8!2sBhopal%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1720761884186!5m2!1sen!2sin"
+            width={600}
+            height={450}
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full"
+          />
+        </div>
+      </div>
+
       {/* footer */}
-       <Footer/>
+      <Footer />
     </div>
   );
 };
