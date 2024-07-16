@@ -3,8 +3,7 @@ import Footer from './Footer';
 import NavBar from './NavBar';
 import React from 'react';
 const OurMenu = () => {
-  const [count,setcount]=React.useState(0);
-  const [selectedItem,setSelecteditem]=React.useState([]);
+  const [selectedItem,setSelecteditem]=React.useState([]);   
   const drinks = [
     { name: 'Cappuccino', price: '$4.20', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.', img: 'src/image/product-01-free-img.png',color:'bg-[linear-gradient(45deg,#A77443_0%,#C39868_100%)]'},
     { name: 'Cafe Latte', price: '$3.15', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing.', img: 'src/image/product-02-free-img.png',color:'bg-[linear-gradient(45deg,#4C8D81_0%,#C39868_100%)]'},
@@ -24,14 +23,13 @@ const OurMenu = () => {
   ];
 
   const countIncrementor=(index)=>{
-    setcount(count+1);
     drinks.forEach((val,valindex)=>{
         (index===valindex)?setSelecteditem(prev=>[...prev,val]):[];
     })
   }
   return (
     <div className="h-auto w-full bg-[linear-gradient(to_right,#7F4625,#A77C4E)]">
-      <NavBar values={{items:selectedItem,count:count}} />
+      <NavBar values={{items:selectedItem}} />
       <div className='ourMenuh1 lg:mt-0 mt-20'>
         <h1 className='text-white lg:text-[5.6rem] md:text-[4rem] text-[3rem] text-center'>Our Menu</h1>
       </div>

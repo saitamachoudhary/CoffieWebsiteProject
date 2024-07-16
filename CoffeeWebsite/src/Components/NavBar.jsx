@@ -1,11 +1,17 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
-import { useState } from "react";
+import { useState,useEffect} from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Badge, Modal, Avatar, List,Button} from "antd";
 import { IoCartSharp } from "react-icons/io5";
+import{DeleteFilled} from '@ant-design/icons';
 const NavBar = ({ values }) => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [modal1Open, setModal1Open] = useState(false);
+  const [modal1Open, setModal1Open] = useState(false);  
+  const [cartValues,setcartValues]=useState([]);
+  
+  useEffect(()=>{
+   if(values) setcartValues(values.items);
+  },[values]);
 
   const location = useLocation();
   const linkStyle =
@@ -20,9 +26,14 @@ const NavBar = ({ values }) => {
  function Total(){
    let totalsum=0;
    const removeDollarSignAndConvert = (value) => parseFloat(value.replace('$', ''));
-   const numericValues = values.items.map(val=>removeDollarSignAndConvert(val.price));
-  totalsum=numericValues.reduce((acc, curr) => acc + curr, 0);
+   const numericValues = cartValues.map(val=>removeDollarSignAndConvert(val.price));
+   totalsum=numericValues.reduce((acc, curr) => acc + curr, 0);
   return totalsum;
+ }
+
+ const deletecartItem=(itemindex)=>{
+ const updatecartItem=cartValues.filter((val,index)=>index!==itemindex?val:null);
+  setcartValues(updatecartItem);
  }
 
   return (
@@ -94,7 +105,7 @@ const NavBar = ({ values }) => {
 
        {location.pathname==='/ourmenu'? <div>
        <a href="#">
-          <Badge count={(values.count!=='undefined')?values.count:0}>
+          <Badge count={(values)?cartValues.length:0}>
             <IoCartSharp
               className="text-white text-2xl"
               onClick={() => setModal1Open(true)}
@@ -118,19 +129,19 @@ const NavBar = ({ values }) => {
         >
           <List
             itemLayout="horizontal"
-            dataSource={values.items}
+            dataSource={cartValues}
             renderItem={(item, index) => (
               <List.Item>
                 <List.Item.Meta
                   avatar={
                     <Avatar
-                      src={values.items[index].img}
+                      src={cartValues[index].img}
                     />
                   }
-                  title={values.items[index].name}
-                  description={values.items[index].price}
+                  title={cartValues[index].name}
+                  description={cartValues[index].price}
                 />
-              <Button>Proceed</Button>
+              <DeleteFilled onClick={()=>deletecartItem(index)} />
               </List.Item>
             )}
           />
